@@ -67,7 +67,7 @@ public class GraphController {
                 break;
             case 5:
                 int vertexToCheck = graphView.getUserInput("Enter Vertex for check:");
-                if (graphModel.isVertex(vertexToCheck)) {
+                if (graphModel.hasVertex(vertexToCheck)) {
                     graphView.displayMessage("Vertex " + vertexToCheck + " is exist.");
                 } else {
                     graphView.displayMessage("Vertex  " + vertexToCheck + " is not exist.");
@@ -76,7 +76,7 @@ public class GraphController {
             case 6:
                 int sourceEdgeCheck = graphView.getUserInput("Enter start Vertex for check edge:");
                 int destinationEdgeCheck = graphView.getUserInput("Enter end Vertex for check edge:");
-                if (graphModel.isEdge(sourceEdgeCheck, destinationEdgeCheck)) {
+                if (graphModel.hasEdge(sourceEdgeCheck, destinationEdgeCheck)) {
                     graphView.displayMessage("Edge between " + sourceEdgeCheck + " and " + destinationEdgeCheck + " is exist.");
                 } else {
                     graphView.displayMessage("Edge between " + sourceEdgeCheck + " and " + destinationEdgeCheck + " is not exist.");

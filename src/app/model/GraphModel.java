@@ -53,12 +53,12 @@ public class GraphModel {
     }
 
     // Check Vertex in Graph
-    public boolean isVertex(int vertex) {
+    public boolean hasVertex(int vertex) {
         return graph.containsKey(vertex);
     }
 
     // Check Edge in Graph
-    public boolean isEdge(int source, int destination) {
+    public boolean hasEdge(int source, int destination) {
         return graph.containsKey(source) && graph.get(source).contains(destination);
     }
 
